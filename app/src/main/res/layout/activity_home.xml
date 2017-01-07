@@ -8,20 +8,11 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.unmuteapp4gmail.unmute.home">
+    tools:context="com.unmuteapp4gmail.unmute.home"
+    android:backgroundTint="#ffffff">
 
 
-    <ImageView
-        android:layout_width="400dp"
-        android:layout_height="300dp"
-        android:id="@+id/imageView"
-        android:src="@mipmap/ui4"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
-
-
-        <Button
+    <Button
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:text="Login"
@@ -42,20 +33,22 @@
             android:background="@drawable/mybutton"
             android:layout_alignTop="@+id/button4"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
+            android:layout_alignParentEnd="false"
             android:backgroundTint="#ff9500"
             android:textColor="#ffffff"
             android:textSize="25dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Changing the way you perceive"
-        android:id="@+id/textView"
-        android:textSize="20dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="249dp"
-        android:textColor="#1f1f21" />
+    <ImageButton
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:id="@+id/imageButton"
+        android:src="@mipmap/ui4"
+        android:backgroundTint="#ffffff"
+        android:adjustViewBounds="false"
+        android:scaleType="fitXY"
+        android:layout_alignRight="@+id/button5"
+        android:layout_alignEnd="@+id/button5"
+        android:layout_alignParentTop="true" />
 
 
 </RelativeLayout>
