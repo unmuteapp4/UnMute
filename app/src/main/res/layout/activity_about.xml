@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.unmuteapp4gmail.unmute.About">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText5"
+        android:layout_alignParentTop="true"
+        android:text="About Us"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is UnMute
+UnMute is an initiative straight from the heart of a chosen few who wish to fill the lives of million hearing-impaired kids across cities, borders, nations with the beauty of expression and art of communication. Your old unused phones and our efforts will be used to understand them."
+        android:id="@+id/textView1"
+        android:layout_below="@+id/editText5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="1dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="
+Our Mission
+Our mission is to work for the development of the Deaf community,empowering them with the power of expression, promoting social and cultural awareness while working towards independent and barrier free communication for the Deaf."
+        android:id="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="1dp"
+        android:layout_below="@id/textView1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="
+Our Vision
+Our vision is deafness with dignity and equality, and a society where deaf people have equal opportunities to participate in all walks of life. We can envision the future where deafness is no more a 'disability'. We see a world where they are on the same footing as the regular children."
+        android:id="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="1dp"
+        android:layout_below="@id/textView2"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="
+Our Values
+Our values are simple. Treating others the way you wish to be treated: Respect is to honor and show consideration, this respect for each individual is what forms the foundation of UnMute."
+        android:id="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="1dp"
+        android:layout_below="@id/textView3"
+        />
+
+    </RelativeLayout>

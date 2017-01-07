@@ -23,7 +23,8 @@
         <activity android:name=".login" />
         <activity android:name=".Volunteer" />
         <activity android:name=".Student" />
-        <activity android:name=".Donate"></activity>
+        <activity android:name=".Donate" />
+        <activity android:name=".About"></activity>
     </application>
 
 </manifest>
