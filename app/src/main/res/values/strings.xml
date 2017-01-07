@@ -2,9 +2,9 @@
     <string name="app_name">UnMute</string>
     <string name="title_activity_login">Sign in</string>
 
-    <string name="country_prompt">Selct login type</string>
+    <string name="login_prompt">Select login type</string>
 
-    <string-array name="country_arrays">
+    <string-array name="login_arrays">
         <item>Student</item>
         <item>Volunteer</item>
         <item>Admin</item>

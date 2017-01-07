@@ -13,8 +13,8 @@
         android:id="@+id/spinner1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:entries="@array/country_arrays"
-        android:prompt="@string/country_prompt" />
+        android:entries="@array/login_arrays"
+        android:prompt="@string/login_prompt" />
 
     <Spinner
         android:id="@+id/spinner2"
@@ -26,7 +26,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="350dp"
-        android:text="Submit" />
+        android:text="Submit"
+        android:onClick="onClick"
+        />
 
     <EditText
         android:layout_width="wrap_content"
@@ -43,6 +45,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
+        android:text="Password"
         android:ems="10"
         android:id="@+id/editText2"
         android:layout_centerVertical="true"
