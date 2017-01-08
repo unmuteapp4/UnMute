@@ -11,22 +11,22 @@
 
     <Spinner
         android:id="@+id/spinner1"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
         android:entries="@array/login_arrays"
         android:prompt="@string/login_prompt" />
 
-    <Spinner
-        android:id="@+id/spinner2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+
 
     <Button
         android:id="@+id/btnSubmit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="350dp"
-        android:text="Submit"
+        android:layout_marginTop="400dp"
+        android:layout_centerHorizontal="true"
+        android:text="Login"
         android:onClick="onClick"
         />
 
@@ -39,7 +39,7 @@
         android:id="@+id/editText"
         android:layout_below="@+id/spinner1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="42dp" />
+        android:layout_marginTop="100dp" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -48,7 +48,20 @@
         android:text="Password"
         android:ems="10"
         android:id="@+id/editText2"
-        android:layout_centerVertical="true"
+        android:layout_marginTop="330dp"
         android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText6"
+        android:layout_alignParentTop="true"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

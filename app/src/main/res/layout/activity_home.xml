@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.unmuteapp4gmail.unmute.home"
-    android:backgroundTint="#ffffff">
+    >
 
 
     <Button
@@ -23,7 +23,7 @@
             android:layout_alignParentStart="true"
             android:backgroundTint="#4cd964"
             android:textColor="#ffffff"
-            android:onClick="sendMessage1"
+            android:onClick="goToActivity1"
             android:textSize="25dp" />
 
         <Button
@@ -37,7 +37,7 @@
             android:layout_alignParentEnd="false"
             android:backgroundTint="#ff9500"
             android:textColor="#ffffff"
-            android:onClick="sendMessage2"
+            android:onClick="goToActivity2"
             android:textSize="25dp" />
 
     <ImageButton
@@ -51,7 +51,7 @@
         android:layout_alignRight="@+id/button5"
         android:layout_alignEnd="@+id/button5"
         android:layout_alignParentTop="true"
-        android:onClick="sendMessage3"
+        android:onClick="goToActivity3"
         />
 
 

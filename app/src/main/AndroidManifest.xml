@@ -24,7 +24,8 @@
         <activity android:name=".Volunteer" />
         <activity android:name=".Student" />
         <activity android:name=".Donate" />
-        <activity android:name=".About"></activity>
+        <activity android:name=".About" />
+        <activity android:name=".Admin"></activity>
     </application>
 
 </manifest>
