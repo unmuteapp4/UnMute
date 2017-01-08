@@ -27,7 +27,8 @@
         android:text="Games"
         android:id="@+id/button9"
         android:background="@drawable/mybutton"
-        android:layout_marginLeft="200dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
         android:layout_marginTop="60dp"
         android:backgroundTint="#ffcc00"
         android:textColor="#ffffff"
@@ -55,9 +56,8 @@
         android:id="@+id/button5"
         android:background="@drawable/mybutton"
         android:layout_marginTop="210dp"
-        android:layout_marginRight="30dp"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="false"
+        android:layout_marginRight="30dp"
         android:backgroundTint="#c644fc"
         android:textColor="#ffffff"
         android:textSize="20dp" />
@@ -91,7 +91,7 @@
         android:textColor="#ffffff"
         android:textSize="20dp" />
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/editText3"

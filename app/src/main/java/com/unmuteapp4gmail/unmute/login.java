@@ -17,38 +17,36 @@ public class login extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
-    }
+        setContentView(R.layout.activity_login);}
 
 
-    public void goToActivity4 (String activity){
-        Intent intent = new Intent (this, String.class);
-        startActivity(intent);
-    }
 
-    public void onClick(View v) {
-        final int id = v.getId();
-        switch (id) {
-            case R.id.btnSubmit:
+    public void onClick(View view) {
 
-                Spinner mySpinner = (Spinner) findViewById(R.id.spinner1);
-                String text = mySpinner.getSelectedItem().toString();
-                if (text.equals("Volunteer")) {
-                   goToActivity4("Volunteer");
-                }
+        Spinner mySpinner = (Spinner) findViewById(R.id.spinner1);
+        String text = mySpinner.getSelectedItem().toString();
 
-                else if (text.equals("Student")) {
-                  goToActivity4("Student");
-               }
+        if (text.compareTo("Volunteer") == 0) {
+            Intent intent = new Intent (this, Volunteer.class);
+            startActivity(intent);
+        }
 
-                else {
-                    goToActivity4("Admin");
-                }
+        else if (text.compareTo("Student")==0) {
+            Intent intent = new Intent (this, Student.class);
+            startActivity(intent);
+        }
 
-                break;
+        else {
+            Intent intent = new Intent (this, Admin.class);
+            startActivity(intent);
         }
 
     }
+
+
+
+
+
 
 }
 

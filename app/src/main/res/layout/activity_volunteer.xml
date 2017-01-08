@@ -60,7 +60,7 @@
         android:textColor="#ffffff"
         android:textSize="20dp" />
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/editText4"
