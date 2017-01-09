@@ -29,7 +29,10 @@
         <activity android:name=".Admin" />
         <activity android:name=".DonateBooks" />
         <activity android:name=".DonatePhone" />
-        <activity android:name=".DonateMoney"></activity>
+        <activity android:name=".DonateMoney" />
+        <activity android:name=".TextSpeech" />
+        <activity android:name=".Attendance" />
+        <activity android:name=".Jobs"></activity>
     </application>
 
 </manifest>
