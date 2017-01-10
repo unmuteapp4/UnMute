@@ -32,7 +32,20 @@
         <activity android:name=".DonateMoney" />
         <activity android:name=".TextSpeech" />
         <activity android:name=".Attendance" />
-        <activity android:name=".Jobs"></activity>
+        <activity android:name=".Jobs" />
+        <activity android:name=".DonateBooks2" />
+        <activity android:name=".Games" />
+        <activity android:name=".Literacy" />
+        <activity android:name=".Maths" />
+        <activity android:name=".Memory" />
+        <activity android:name=".Companies" />
+        <activity android:name=".Documents" />
+        <activity android:name=".Seminars" />
+        <activity android:name=".Tests" />
+        <activity android:name=".English" />
+        <activity android:name=".Mathematics" />
+        <activity android:name=".DonatePhone2" />
+        <activity android:name=".DonateMoney2"></activity>
     </application>
 
 </manifest>

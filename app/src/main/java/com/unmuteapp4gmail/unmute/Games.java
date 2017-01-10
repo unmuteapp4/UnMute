@@ -5,26 +5,26 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class Donate extends AppCompatActivity {
+public class Games extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_donate);
+        setContentView(R.layout.activity_games);
     }
 
-    public void goToActivity5 (View view){
-        Intent intent = new Intent (this, DonateBooks2.class);
+    public void goToActivity13 (View view){
+        Intent intent = new Intent (this, Literacy.class);
         startActivity(intent);
     }
 
-    public void goToActivity6 (View view){
-        Intent intent = new Intent (this, DonatePhone2.class);
+    public void goToActivity14 (View view){
+        Intent intent = new Intent (this, Maths.class);
         startActivity(intent);
     }
 
-    public void goToActivity7 (View view){
-        Intent intent = new Intent (this, DonateMoney2.class);
+    public void goToActivity15 (View view){
+        Intent intent = new Intent (this, Memory.class);
         startActivity(intent);
     }
 }

@@ -7,12 +7,12 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.unmuteapp4gmail.unmute.Jobs">
+    tools:context="com.unmuteapp4gmail.unmute.Games">
 
     <Button
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:text="Companies"
+        android:text="Literacy"
         android:id="@+id/button4"
         android:background="@drawable/mybutton"
         android:layout_alignParentLeft="true"
@@ -21,13 +21,13 @@
         android:backgroundTint="#007aff"
         android:textColor="#ffffff"
         android:textSize="25dp"
-        android:onClick="goToActivity16"
+        android:onClick="goToActivity13"
         />
 
     <Button
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:text="Seminars"
+        android:text="Maths"
         android:id="@+id/button5"
         android:background="@drawable/mybutton"
         android:layout_marginTop="80dp"
@@ -36,22 +36,22 @@
         android:backgroundTint="#ff3b30"
         android:textColor="#ffffff"
         android:textSize="25dp"
-        android:onClick="goToActivity18"
+        android:onClick="goToActivity14"
         />
 
     <Button
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:text="Documents"
+        android:text="Memory"
         android:id="@+id/button6"
         android:background="@drawable/mybutton"
         android:layout_marginTop="52dp"
         android:backgroundTint="#0bd318"
         android:textColor="#ffffff"
-        android:textSize="24dp"
+        android:textSize="25dp"
         android:layout_below="@+id/button4"
         android:layout_centerHorizontal="true"
-        android:onClick="goToActivity17"
+        android:onClick="goToActivity15"
         />
 
     <TextView
@@ -59,7 +59,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/editText4"
         android:layout_alignParentTop="true"
-        android:text="Jobs"
+        android:text="Games"
         android:textColor="#8e8e93"
         android:textSize="25dp"
         android:layout_alignRight="@+id/button5"
@@ -67,6 +67,5 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:textAlignment="center" />
-
 
 </RelativeLayout>
