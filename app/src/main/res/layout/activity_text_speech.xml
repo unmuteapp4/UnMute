@@ -19,7 +19,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:textColor="#ff7aff10"
+        android:textColor="#0bd318"
         android:textColorHint="#ffff23d1" />
 
     <Button
