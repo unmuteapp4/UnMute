@@ -22,4 +22,14 @@ public class Student extends AppCompatActivity {
         Intent intent = new Intent (this, Jobs.class);
         startActivity(intent);
     }
+
+    public void goToActivity12 (View view){
+        Intent intent = new Intent (this, Games.class);
+        startActivity(intent);
+    }
+
+    public void goToActivity21 (View view){
+        Intent intent = new Intent (this, Tests.class);
+        startActivity(intent);
+    }
 }
