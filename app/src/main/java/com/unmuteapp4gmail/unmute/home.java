@@ -1,11 +1,13 @@
 package com.unmuteapp4gmail.unmute;
 
 import android.content.Intent;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class home extends AppCompatActivity {
 
@@ -32,9 +34,17 @@ public class home extends AppCompatActivity {
     }
 
 
+@Override
+    public void onBackPressed(){
 
+    Intent intent = new Intent(Intent.ACTION_MAIN);
+    intent.addCategory(Intent.CATEGORY_HOME);
+    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);//***Change Here***
+    startActivity(intent);
+    finish();
+    System.exit(0);
 
-
+}
 
 
 

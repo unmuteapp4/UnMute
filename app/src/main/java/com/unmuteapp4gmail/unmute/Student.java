@@ -32,4 +32,11 @@ public class Student extends AppCompatActivity {
         Intent intent = new Intent (this, Tests.class);
         startActivity(intent);
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(Student.this,login.class);
+        startActivity(intent);
+
+    }
 }

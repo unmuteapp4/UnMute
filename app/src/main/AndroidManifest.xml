@@ -45,7 +45,11 @@
         <activity android:name=".English" />
         <activity android:name=".Mathematics" />
         <activity android:name=".DonatePhone2" />
-        <activity android:name=".DonateMoney2"></activity>
+        <activity android:name=".DonateMoney2" />
+        <activity android:name=".Sentence" />
+        <activity android:name=".EndSentence" />
+        <activity android:name=".Arithmatic" />
+        <activity android:name=".EndArithmatic"></activity>
     </application>
 
 </manifest>
