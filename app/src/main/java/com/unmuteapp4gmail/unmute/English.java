@@ -23,4 +23,16 @@ public class English extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+    public void goToActivity26(View view){
+        Intent intent = new Intent(this, Tenses.class);
+        startActivity(intent);
+
+    }
+
+    public void goToActivity27(View view){
+        Intent intent = new Intent(this, Grammar.class);
+        startActivity(intent);
+
+    }
 }

@@ -33,7 +33,6 @@ public class home extends AppCompatActivity {
         startActivity(intent);
     }
 
-
 @Override
     public void onBackPressed(){
 
@@ -41,7 +40,6 @@ public class home extends AppCompatActivity {
     intent.addCategory(Intent.CATEGORY_HOME);
     intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);//***Change Here***
     startActivity(intent);
-    finish();
     System.exit(0);
 
 }

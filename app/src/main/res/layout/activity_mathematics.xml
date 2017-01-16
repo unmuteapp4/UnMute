@@ -12,7 +12,7 @@
     <Button
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:text="Arithmatic"
+        android:text="Arithmetic"
         android:id="@+id/button4"
         android:background="@drawable/mybutton"
         android:layout_alignParentLeft="true"
@@ -27,7 +27,7 @@
     <Button
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:text="Algebra"
+        android:text="Probability"
         android:id="@+id/button5"
         android:background="@drawable/mybutton"
         android:layout_marginTop="80dp"
@@ -35,14 +35,14 @@
         android:layout_alignParentEnd="false"
         android:backgroundTint="#ff3b30"
         android:textColor="#ffffff"
-        android:textSize="25dp"
-        android:onClick=""
+        android:textSize="23dp"
+        android:onClick="goToActivity28"
         />
 
     <Button
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:text="Geometry"
+        android:text="Logic"
         android:id="@+id/button6"
         android:background="@drawable/mybutton"
         android:layout_marginTop="52dp"
@@ -51,7 +51,7 @@
         android:textSize="25dp"
         android:layout_below="@+id/button4"
         android:layout_centerHorizontal="true"
-        android:onClick=""
+        android:onClick="goToActivity29"
         />
 
     <TextView

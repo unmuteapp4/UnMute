@@ -24,5 +24,17 @@ public class Mathematics extends AppCompatActivity {
 
     }
 
+    public void goToActivity28(View view){
+        Intent intent = new Intent(this, Probability.class);
+        startActivity(intent);
+
+    }
+
+    public void goToActivity29(View view){
+        Intent intent = new Intent(this, Logic.class);
+        startActivity(intent);
+
+    }
+
 
 }

@@ -12,6 +12,7 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".home">
@@ -49,7 +50,15 @@
         <activity android:name=".Sentence" />
         <activity android:name=".EndSentence" />
         <activity android:name=".Arithmatic" />
-        <activity android:name=".EndArithmatic"></activity>
+        <activity android:name=".EndArithmatic" />
+        <activity android:name=".Tenses" />
+        <activity android:name=".Grammar" />
+        <activity android:name=".EndTenses" />
+        <activity android:name=".EndGrammar" />
+        <activity android:name=".Probability" />
+        <activity android:name=".EndProbability" />
+        <activity android:name=".Logic" />
+        <activity android:name=".EndLogic"></activity>
     </application>
 
 </manifest>

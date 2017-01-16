@@ -36,7 +36,7 @@
         android:backgroundTint="#ff3b30"
         android:textColor="#ffffff"
         android:textSize="25dp"
-        android:onClick=""
+        android:onClick="goToActivity26"
         />
 
     <Button
@@ -51,7 +51,7 @@
         android:textSize="25dp"
         android:layout_below="@+id/button4"
         android:layout_centerHorizontal="true"
-        android:onClick="goToActivity7"
+        android:onClick="goToActivity27"
         />
 
     <TextView
