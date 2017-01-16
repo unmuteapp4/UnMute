@@ -22,4 +22,11 @@ public class Tests extends AppCompatActivity {
         Intent intent = new Intent (this, Mathematics.class);
         startActivity(intent);
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(Tests.this,Student.class);
+        startActivity(intent);
+
+    }
 }

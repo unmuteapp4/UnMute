@@ -17,7 +17,9 @@ public class login extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);}
+        setContentView(R.layout.activity_login);
+
+    }
 
 
 
@@ -43,6 +45,12 @@ public class login extends AppCompatActivity {
 
     }
 
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(login.this,home.class);
+        startActivity(intent);
+
+    }
 
 
 
