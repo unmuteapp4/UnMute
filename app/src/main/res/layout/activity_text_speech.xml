@@ -10,38 +10,37 @@
     tools:context="com.unmuteapp4gmail.unmute.TextSpeech">
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editText"
-        android:layout_marginTop="100dp"
-        android:hint="Enter Text"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
+        android:layout_marginTop="300dp"
+        android:hint="Tap to enter text"
+        android:textSize="55px"
         android:textColor="#ff7aff10"
         android:textColorHint="#ffff23d1" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Press to convert"
+        android:layout_width="275px"
+        android:layout_height="275px"
+        android:text="SPEAK"
+        android:textSize="50px"
+        android:textColor="#ffffff"
+        android:background="@drawable/mybutton"
+        android:backgroundTint="#1ad6fd"
         android:id="@+id/button8"
-        android:layout_below="@+id/editText"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="46dp" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Type your text to convert to speech "
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textSize="25dp"
-        android:layout_alignParentRight="true"
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="500px"
+        android:id="@+id/imageView"
+        android:src="@mipmap/littlegirl"
+        android:layout_marginTop="10px"
         android:layout_alignParentLeft="true"
-        android:textAlignment="center"
-        />
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/editText"
+        android:layout_alignEnd="@+id/editText" />
+
 
 </RelativeLayout>
