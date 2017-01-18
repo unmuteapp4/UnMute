@@ -13,8 +13,13 @@ public class Volunteer extends AppCompatActivity {
         setContentView(R.layout.activity_volunteer);
     }
 
-    public void goToActivity9 (View view){
-        Intent intent = new Intent (this, Attendance.class);
+    public void goToActivity9(View view) {
+        Intent intent = new Intent(this, Attendance.class);
+        startActivity(intent);
+    }
+
+    public void onBackPressed() {
+        Intent intent = new Intent(Volunteer.this, login.class);
         startActivity(intent);
     }
 }

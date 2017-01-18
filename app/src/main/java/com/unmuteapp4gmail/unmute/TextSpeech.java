@@ -18,7 +18,7 @@ public class TextSpeech extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_text_speech);
-        ed1=(EditText)findViewById(R.id.editText);
+        ed1=(EditText)findViewById(R.id.username);
         b1=(Button)findViewById(R.id.button8);
 
         t1=new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {

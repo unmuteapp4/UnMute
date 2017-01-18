@@ -1,18 +1,20 @@
 package com.unmuteapp4gmail.unmute;
 
-import android.app.ProgressDialog;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.RecyclerView;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.ViewGroup;
-import android.view.ViewStub;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.Spinner;
+import android.widget.EditText;
+
+import android.widget.Toast;
+
+import com.backendless.Backendless;
+import com.backendless.BackendlessUser;
 
 public class login extends AppCompatActivity {
+    EditText identityField, passwordField;
+    Button loginButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,28 +24,89 @@ public class login extends AppCompatActivity {
     }
 
 
-
     public void onClick(View view) {
 
-        Spinner mySpinner = (Spinner) findViewById(R.id.spinner1);
-        String text = mySpinner.getSelectedItem().toString();
+        initUI();
+            Backendless.setUrl(Defaults.SERVER_URL);
+            Backendless.initApp(this, Defaults.APPLICATION_ID, Defaults.SECRET_KEY, Defaults.VERSION);
 
-        if (text.compareTo("Volunteer") == 0) {
-            Intent intent = new Intent (this, Volunteer.class);
-            startActivity(intent);
+            Backendless.UserService.isValidLogin(new DefaultCallback<Boolean>(this) {
+                public void handleResponse(Boolean isValidLogin) {
+
+                    if (isValidLogin && Backendless.UserService.CurrentUser() == null){
+                        String currentUserId = Backendless.UserService.loggedInUser();
+
+                        if (!currentUserId.equals("")) {
+                            Backendless.UserService.findById(currentUserId, new DefaultCallback<BackendlessUser>(login.this, "Logging in...") {
+                                public void handleResponse(BackendlessUser currentUser) {
+                                    super.handleResponse(currentUser);
+                                    Backendless.UserService.setCurrentUser(currentUser);
+                                    finish();
+                                }
+                            });
+                        }
+                    }
+
+                    super.handleResponse(isValidLogin);
+                }
+            });
         }
 
-        else if (text.compareTo("Student")==0) {
-            Intent intent = new Intent (this, Student.class);
-            startActivity(intent);
-        }
+    private void initUI() {
 
-        else {
-            Intent intent = new Intent (this, Admin.class);
-            startActivity(intent);
-        }
+        identityField = (EditText) findViewById(R.id.username);
+        passwordField = (EditText) findViewById(R.id.password);
+        loginButton = (Button) findViewById(R.id.loginButton);
+
+
+
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onLoginButtonClicked();
+            }
+        });
+
 
     }
+    public void onLoginButtonClicked () {
+        String identity = identityField.getText().toString();
+        String password = passwordField.getText().toString();
+
+        char first= identity.charAt(0);
+        if(first=='v'){
+
+        Backendless.UserService.login(identity, password,new DefaultCallback<BackendlessUser>(login.this) {
+            public void handleResponse(BackendlessUser backendlessUser) {
+                super.handleResponse(backendlessUser);
+                startActivity(new Intent(login.this, Volunteer.class));
+                finish();
+
+            }});}
+        else if(first=='s'){
+
+            Backendless.UserService.login(identity, password,new DefaultCallback<BackendlessUser>(login.this) {
+                public void handleResponse(BackendlessUser backendlessUser) {
+                    super.handleResponse(backendlessUser);
+                    startActivity(new Intent(login.this, Student.class));
+                    finish();
+                }});}
+        else if(first=='a'){
+
+            Backendless.UserService.login(identity, password,new DefaultCallback<BackendlessUser>(login.this) {
+                public void handleResponse(BackendlessUser backendlessUser) {
+                    super.handleResponse(backendlessUser);
+                    startActivity(new Intent(login.this, Admin.class));
+                    finish();
+                }});}
+
+
+        else{
+                Toast.makeText(login.this,"Invalid Username or Password", Toast.LENGTH_LONG).show();
+            }
+    }
+
+
 
     @Override
     public void onBackPressed() {
